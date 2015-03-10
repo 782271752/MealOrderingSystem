@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/bg_order_item"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_small">
+
+        <TextView
+            style="@style/DefaultTextView"
+            android:textStyle="bold"
+            android:text="订单号 : " />
+
+        <TextView
+            android:id="@+id/my_order_id_tv"
+            style="@style/DefaultTextView"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="222256468456" />
+
+        <ViewFlipper
+            android:id="@+id/my_address_type_vf"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/my_order_location_tv"
+                style="@style/SmallTextView"
+                android:paddingLeft="38dp"
+                android:background="@drawable/icon_location"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="位置跟踪" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/my_order_comment_tv"
+                android:background="@drawable/btn_default_bg"
+                android:textSize="@dimen/text_size_small"
+                android:padding="@dimen/padding_default"
+                android:textColor="@color/white"
+                android:layout_gravity="right"
+                android:text="订单评价" />
+
+            <TextView
+                style="@style/MyOrderTypeTextView"
+                android:textSize="@dimen/text_size_small"
+                android:drawableRight="@null"
+                android:textColor="#bcbcbc"
+                android:layout_gravity="right"
+                android:text="已经评价" />
+        </ViewFlipper>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/SmallTextView"
+            android:text="时间 : " />
+
+        <TextView
+            android:id="@+id/my_order_time_tv"
+            style="@style/SmallTextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/SmallTextView"
+            android:text="总价 : " />
+
+        <TextView
+            android:id="@+id/my_order_total_cost_tv"
+            style="@style/SmallTextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/SmallTextView"
+            android:text="状态 : " />
+
+        <TextView
+            android:id="@+id/my_order_state_tv"
+            style="@style/SmallTextView" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_divider"
+        android:layout_height="@dimen/divider_height" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/my_order_foods_tv"
+            style="@style/SmallTextView"
+            android:layout_width="match_parent"
+            android:textColor="#999999"
+            android:minLines="2" />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/my_order_delete_iv"-->
+        <!--android:layout_width="@dimen/height_small"-->
+        <!--android:layout_height="@dimen/height_small"-->
+        <!--android:layout_gravity="bottom|right"-->
+        <!--android:src="@drawable/icon_delete"-->
+        <!--android:layout_marginRight="@dimen/margin_default" />-->
+    </FrameLayout>
+
+</LinearLayout>

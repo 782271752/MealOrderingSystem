@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">肯爸宅急送</string>
+    <string name="preferential">优惠</string>
+    <string name="food">美食</string>
+    <string name="shop_cart">购物车</string>
+    <string name="personal_information">我</string>
+    <string name="personal_message">我的消息</string>
+    <string name="personal_coupons">我的优惠卷</string>
+    <string name="personal_order">我的订单</string>
+    <string name="personal_address">地址管理</string>
+    <string name="more">更多</string>
+    <string name="more_share_app">分享APP</string>
+    <string name="more_help">用户帮助</string>
+    <string name="more_about">用户协议</string>
+    <string name="more_feedback">意见反馈</string>
+    <string name="more_update">检测更新</string>
+    <string name="settlement">订单结算</string>
+    <string name="login">登　录</string>
+    <string name="logout">注　销</string>
+    <string name="input_phone">请输入手机号</string>
+    <string name="phone_format_invaild">电话号码格式不正确,请重新输入!</string>
+    <string name="input_code">请输入验证码</string>
+    <string name="input_pwd">请输入密码</string>
+    <string name="input_pwd_confirm">请再次输入密码</string>
+    <string name="register">注　册</string>
+    <string name="commit">提  交</string>
+    <string name="find_back">忘记密码</string>
+    <string name="title_activity_food_detail">美食详情</string>
+    <string name="title_activity_my_order">我的订单</string>
+    <string name="title_activity_preferential_detail">PreferentialDetailActivity</string>
+    <string name="title_activity_my_message">我的消息</string>
+    <string name="food_detail">美食详情</string>
+    <string name="food_diy_detail">KEBAB美食详情</string>
+    <string name="preferential_detail">优惠详情</string>
+    <string name="title_activity_order_detail">订单详情</string>
+    <string name="order_detail">订单详情</string>
+    <string name="title_activity_help">f</string>
+    <string name="title_activity_order_comment">订单评价</string>
+    <string name="title_activity_order_confirm">确认订单</string>
+    <string name="money"> ¥ <xliff:g id="cost">%1$s</xliff:g></string>
+    <string name="buy_amount"><xliff:g id="amount">%1$s</xliff:g> 份</string>
+    <string name="send_code">发送验证码</string>
+    <string name="read_and_agree_agreement">请阅读并同意用户协议!</string>
+    <string name="ok">确　定</string>
+    <string name="cancel">取　消</string>
+    <string name="food_diy_detail_type_name_tip">(必须选择<xliff:g id="less">%1$s</xliff:g>项,最多选择<xliff:g id="more">%2$s</xliff:g>项)</string>
+
+    <string-array name="cities">
+        <item>广州</item>
+        <item>深圳</item>
+        <item>东莞</item>
+    </string-array>
+    <string-array name="districts">
+        <item>天河区</item>
+        <item>海珠区</item>
+        <item>白云区</item>
+    </string-array>
+    <string-array name="streets">
+        <item>街道1</item>
+        <item>街道2</item>
+        <item>街道3</item>
+    </string-array>
+
+    <string name="title_activity_my_address_add">新增地址</string>
+    <string name="add_address">新增地址</string>
+    <string name="order_success">下单成功!请在我的订单查看详情!</string>
+    <string name="order_fail">下单失败!请重试!</string>
+    <string name="save">保　存</string>
+    <string name="meal_pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="meal_pull_to_refresh_release_label">放开以刷新</string>
+    <string name="meal_pull_to_refresh_refreshing_label">载入中</string>
+    <string name="meal_pull_to_refresh_tap_label">点击这里刷新</string>
+    <string name="title_activity_find_street">选择区域</string>
+    <string name="title_activity_feedback">意见反馈</string>
+    <string name="title_activity_map">地图</string>
+    <string name="title_activity_shop_location">商铺位置</string>
+    <string name="about_what">\t\t\t\t欢迎您使用肯爸宅急送网络订餐服务，包括但不限于通过肯爸宅急送互联网订餐网站，肯爸宅急送手机App订餐客户端，以及肯爸宅急送基于互联网或手机上网功能开发的其他订餐平台（如肯爸宅急送移动互联网订餐网站），提供的服务（一下简称“我们的服务”）。请您务必先仔细阅读本用户协议（包括隐私权条款及法律条款），我们将按一下的方式和条件为您提供我们的服务。如果您使用我的服务，即表示您完全同意并接受本用户协议。
+我们的服务范围可能会拓展，因此有时还会适用一些附加条款或要求。附加条款将会与相关一同提供，并且在您使用这些服务以后，成为您与我们所达成的协议的一部分。本用户协议适用于您当前及未来使用的我们的服务。我们可以修改本用户协议或相关条款并会予以更新和公布，所有修改的适用不具有追溯力。但是面对服务新功能的特别修改或由于法律原因所作的修改将立即生效。如果您不同意服务的修改条款，应停止使用我们的服务。\n\n\n
+
+
+一、我们的服务和义务\n
+1.基本服务\n
+●肯爸宅急送不同城市的送餐菜单有所不同。不同时段产品项及价格有所不同。肯爸宅急送有权在不预先通知下，对菜单做调整。\n
+●为保证产品质量，各肯爸宅急送门店送餐范围限制（详见订餐平台上显示的送餐范围提示），若您的送餐地址超出服务区域造成无法送餐，敬请原谅；或者您可以选择网络订餐的“外带”服务；\n
+●订餐和送餐时间为每天10:30-21:30。\n
+●网络订餐不设最低消费，谢绝小费。\n
+●每单外送订餐，原则上均收取外送费。\n
+●产品、价格以及外送费如有调整恕不另行通知，具体订餐时实际情况为准。\n
+●如遭遇不可抗力。肯爸宅急送将暂停提供相关服务。\n\n
+
+2.关于订餐\n
+●在您使用我们的服务时，请至肯爸宅急送网站（www.kebabar.cn）、肯爸宅急送手机客户端等查询产品及价格、外送费信息等。\n
+●产品和包装以实物为准。\n
+●如果您的订餐金额大于200元人民币，我们会电话与您确定点餐内容和送餐时间，如果在30分钟内我们无法和您取得联系，您的订单将自动视为无效，请您重新订餐。\n
+●在您成功提交订餐完成订餐后，页面上会立即提示确认信息。此外，您也可以在“查询订单”中查询本次订餐的所有信息和送餐进程。\n
+●网络订餐不提供订单修改和取消功能，请提交前仔细核对订单内容。一旦下单后，您的订餐会实时下到我们的门店，员工会立即开始制作食品。\n
+●请不要在网上重复提交订单而造成重复下单。\n
+●如遇临时断货、送餐高峰期、交通堵塞等状况需要延迟送餐时间、我们将立即致电给您协商解决，敬请谅解。\n\n
+
+3.关于优惠\n
+●在您完成网络订餐前，根据您的点餐内容和金额，我们将自动列出符合条件的优惠项目，供您选择，您可添加优惠项目或放弃。订餐的总金额将根据您最后确认的点餐内同和优惠项目重复计算。\n
+●如果您增加、减少或删除了点餐内容或数量，优惠项目将相应调整或取消。\n
+●部分优惠为单店活动，仅适用于指定商圈或门店，系统会根据您的地址自动晒算并给出优惠列表\n\n
+
+
+4．关于支付方式\n
+我们提供货到付款，到店支付两种支付方式。分别适用不同的点餐方式。\n
+●货到付款方式：适用于所有订餐服务。\n
+●到店支付方式：适用于在网络上选取订餐后，到店领取支付。\n\n
+
+
+5关于电子邮件和短信服务\n
+为了方便您及时了解我们的菜单、新品、优惠、促销等信息，更好享用我们的肯爸宅急送服务，我们将不定期的发送电子邮件至您的电子邮箱，同时我们也讲义短信方式发送上述信息至您的手机，接收以上信息免费。您对本协议的认可表面您同意我们向您发送上述信息。我们提供退订的选择。若您未退订，则表示您同意我们继续向您发送上述信息。\n\n
+
+
+二.您（用户）义务\n
+您在使用我们的服务时，可以自愿选择是否提交个人信息资料。如果您提交个人信息，即表示您接受我们的服务隐私权条款，我们的服务对于您的个人信息和隐私权予以尊重贺保密。请正确填写个人信息，包括订餐人姓氏、性别、送餐地址、送餐联系电话、电子邮箱。
+我们的服务无意向18岁以下未成年人提供网络订餐服务或手机个人信息，家长或监护人对其子女或被监护人使用我们的服务进行监管和负责。由于我们的服务无法辨认用户是否为未成年人，因此如有未成年人使用我们的服务，则表示其已获得家长或监护人认可，任何相关后果由其家长或监护人承担。
+肯爸宅急送有权拒绝向有不诚信记录的订餐用户提供服务。\n\n
+
+
+隐私权条款\n
+您向我们提供详细：在使用我们的服务工程中，您需要向我们提供一些个人信息，包括订餐人姓氏、性别、送餐联系电话、送餐地址、电子邮件，以便我们及时准确地提供送餐服务，请予以理解和配合。如需要更新时，也请确保资料的准确性和及时性，以免影响送餐。您在使用我们的服务时传送的任何其他资料、信息，包括不限于意见、客户反馈、喜好、建议、支持、请求、问题等内容，将被当作非保密资料和非专有资料处理；您的传送行为即表示您同意这些资料用作我们的调查、统计等目的而由我们无偿使用。
+我们在您使用服务的过程中获取信息：在使用我们的服务过程中，某些信息可以通过各种技术和方法不经您主动提供而被收集，这些方法包括IP地址、Cookie，设备数据，日志数据收集等。这些信息不足以使他人辨认您个人的身份，收集上述信息的目的旨在为您提供更完善的服务。\n
+
+●IP地址：一个IP地址是互联网供应商分配给您使用终端的号码，这样您才额可以访问互联网，这个地址一般不被认为是个人身份资料，因为在大多数情况下这个地址是呈动态性的（每次您上网都会变）。我们使用您的IP地址来确定我们服务器中的问题、报告一些集合信息、决定从您的终端连接到我们服务器的最快路径以及管理和提供我们的服务。\n
+●“Cookie”是一个数据元素，是由一个网站发个你的网络浏览器，以帮助网站记住你的信息和你的喜好，为您提供更好的定制化服务。\n
+●设备信息：我们可能会收集与设备有关的信息，例如您的硬件型号、操作系统版本等，以便我们适配您的终端环境，提供最优的服务体验。\n\n
+
+一、信息使用及安全\n
+您的个人信息将仅用作送餐服务、统计资料、消费行为调查或研究、或其它与我们服务相关的合法使用，以便我们及我们的关联企业向您提供更完善的服务，也使您有更好的用用户体验从而提高我们的总体服务质量。基于上述目的，我们可能会将您的个人信息提供给我们的关联公司及为我们提供业务支持的供应商（包括不限于网站运营、技术支持、客服等），在该等情况下，我们将要求我们的关联公司及上述第三方遵守本隐私权条款。除隐私权条款载明的其它用途。
+对于您的个人信息，我们将严格保密，不会泄露、篡改、出售或非法提供给他人。但以下情况的披露无需您的同意、且我们不承担任何责任。\n
+A）满足适用法律、法规、法律程序的要求或强制性的政府要求所做的披露。\n
+B）执行适用的服务条款（包括调查可能存在的违规情况）所做的披露。\n
+C）查找、预防或处理欺诈、安全或技术方面的问题所做的披露。\n
+D）在法律要求或允许的范围内，保护其它用户或公众的权利、财产或安全免遭损害所做的披露。\n\n
+
+二、您的选择\n
+您可以选择设置密码保护订餐账户信息安全，请在每次订餐时，正确输入您的订餐的电子邮箱/手机号码和密码，您的个人信息将完整显示。如果您选择不设置密码，根据您输入的电子邮箱或手机号码，系统将自动列出条件匹配的送餐地址等信息，为了保护隐私，您送餐信息的主要内容会以**号遮蔽，如，海珠区新港西路120号，会被显示为海*……*120号。该显示信息可能不受保护，建议您设置密码。\n\n
+三、免责\n
+我们的服务无需对下列情况承担任何责任：\n
+●由于您将个人信息告知他人或与他人共享账户，而导致的任何个人信息泄露\n
+●任何由于黑客攻击，计算机病毒、手机病毒、侵入或发作，因政府管制而造成的暂时型关闭等影响网络正常经营之不可抗力而造成的个人信息泄露、丢失、误用，变更或毁坏；\n
+●由于与我们的服务链接的其他互联网网站，手机网站或其他手机App客户端所造成之个人信息泄露及由此而导致的任何法律争议和后果。\n\n
+法律条款\n
+我们的服务中所涉及的商标、服务标志、设计、文字或图案及相关知识产权等均属****公司所有、或已取得所有人的正式授权，受法律保护，在未取得***公司或有第三方书面授权之前，任何人不得擅自使用，包括但不限于复制、复印、修改、出版、公布、传送、分发我们的服务中使用的问二本呢、图像、影音、镜像等内容，否则将承担相应法律责任。使用我们的服务并不让您拥有我们的服务或您所访问的内容的任何知识产权。本条款并未授予您使用我们的服务中所用的任何商标、标志、设计、文字等权利。
+我们在提供服务时将会尽到商业上合理水平的技能和注意义务，希望那你会喜欢我们的服务，但有些关于服务的事项恕我们无法做出承诺。因此，在法律允许的范围内，我们的服务对信息的准确性和及时性不给予任何明示或默示的保证。我们的服务不承担因您进入或使用我们的服务而导致的任何直接的、间接的、意外的、因果性的损害责任。请使用合法软件和设备。
+您在使用我们的服务时不得传送和发放带有中伤、诽谤、造谣、色情及其他违法或不道德的资料和言论，我们有权对此进行管理和监督，但并不对您的上述行为承担任何责任。
+如果我们的服务提供了第三方网站链接，仅仅是为了向您提供便利。如果您使用这些链接，您将离开本站。我们无法评估此类第三方网站，也不对任何此类第三方网站或这些网站提供的产品、服务或内容负责。因此，对此类第三方网站，或此类网站上提供的任何信息、软件、产品、服务或材料，或使用这些网站可能得到的任何结果，您需自行评估及承担使用风险。
+我们可以修改本条款并会予以更新和公布，所有修改的适用不具有追溯力。但是，对服务新功能的特别修改或由于法律原因所作的修改将立即生效。如果您不同意服务的修改条款，应停止使用我们的服务。
+一旦您使用了我们的服务，即表示您同意接受并遵守肯爸宅急送网络订餐服务用户协议、隐私权条款及法律条款。\n</string>
+    <string name="title_activity_find_back">FindBackActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_about_us">关于</string>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white"
+    android:padding="@dimen/padding_default">
+
+    <TextView
+        android:id="@+id/help_title_tv"
+        style="@style/MediumTextView"
+        android:text="1. 为什么我订餐失败 ?"
+        android:textStyle="bold" />
+
+    <include layout="@layout/layout_divider" />
+
+    <TextView
+        android:id="@+id/help_content_tv"
+        style="@style/DefaultTextView"
+        android:textColor="@color/light_grey"
+        android:text="因客户要求简化回答内容!"
+        android:minLines="2" />
+</LinearLayout>

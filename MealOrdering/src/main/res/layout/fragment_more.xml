@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mealordering.ui.fragment.MoreFragment"
+    android:padding="@dimen/padding_large">
+
+    <TextView
+        android:id="@+id/more_shop_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_default"
+        android:drawableLeft="@drawable/ic_location"
+        android:drawablePadding="@dimen/padding_default"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_white"
+        android:layout_marginBottom="@dimen/margin_default"
+        android:text="商铺地址展示" />
+
+    <include
+        layout="@layout/layout_list_view"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mealordering.employee">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.mealordering.employee.AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.mealordering.employee.ui.LoginActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.mealordering.net.RoboSpiceService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.mealordering.employee.ui.MainActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mealordering.employee.ui.OrderDetailActivity"
+            android:label="@string/title_activity_order_detail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mealordering.employee.ui.GetOrderActivity"
+            android:label="@string/title_activity_get_order"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mealordering.employee.ui.MyOrderActivity"
+            android:label="@string/title_activity_order_delivering"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.mealordering.employee.ui.MapActivity"
+            android:label="@string/title_activity_map"></activity>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="93903032d906e7c183d7cdf4445d73e2" />
+    </application>
+
+</manifest>

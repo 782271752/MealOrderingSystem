@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/test_kele_icon"
+        android:bottom="6dp"
+        android:right="6dp" />
+    <item android:drawable="@drawable/icon_radio_checked" />
+</layer-list>

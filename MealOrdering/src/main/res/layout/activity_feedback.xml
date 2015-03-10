@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mealordering.ui.AboutActivity"
+    tools:ignore="MergeRootFrame"
+    android:padding="@dimen/padding_default">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/DefaultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_default"
+            android:text="感谢您抽出宝贵的时间,给我们留下建议!"
+            android:textSize="@dimen/text_size_default" />
+
+        <EditText
+            android:id="@+id/feedback_content_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="4"
+            android:gravity="top|left"
+            android:background="@drawable/bg_white_input"
+            android:textSize="@dimen/text_size_default" />
+
+        <TextView
+            style="@style/DefaultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_default"
+            android:text="你的电子邮件 : " />
+
+        <EditText
+            android:id="@+id/feedback_email_et"
+            style="@style/DefaultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/bg_white_input"
+            android:padding="@dimen/padding_default" />
+
+        <Button
+            android:id="@+id/feedback_submit_btn"
+            style="@style/DefaultButton"
+            android:text="确定提交"
+            android:layout_marginTop="@dimen/height_small" />
+
+        <TextView
+            style="@style/MediumTextView"
+            android:autoLink="phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:textColor="@color/red"
+            android:text="客服电话：020-28334918" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loading_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="center" />
+</FrameLayout>

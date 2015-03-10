@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mealordering.ui.HomeActivity"
+    android:orientation="vertical"
+    android:background="@color/content_bg"
+    tools:ignore="MergeRootFrame">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/layout_title" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_default"
+            android:layout_gravity="right|center_vertical"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_title_bg"
+            android:text="@string/login" />
+
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_default"
+            android:layout_gravity="right|center_vertical"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_title_bg"
+            android:text="@string/logout"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/home_content_layout"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal">
+
+        <!--<CheckedTextView-->
+        <!--android:id="@+id/home_preferential_btn"-->
+        <!--style="@style/HomeBottomButton"-->
+        <!--android:background="@drawable/btn_preferential_bg" />-->
+
+        <CheckedTextView
+            android:id="@+id/home_food_btn"
+            style="@style/HomeBottomButton"
+            android:background="@drawable/btn_food_bg" />
+
+        <CheckedTextView
+            android:id="@+id/home_shop_cart_btn"
+            style="@style/HomeBottomButton"
+            android:background="@drawable/btn_shop_cart_bg" />
+
+        <CheckedTextView
+            android:id="@+id/home_personal_information_btn"
+            style="@style/HomeBottomButton"
+            android:background="@drawable/btn_personal_information_bg" />
+
+        <CheckedTextView
+            android:id="@+id/home_more_btn"
+            style="@style/HomeBottomButton"
+            android:background="@drawable/btn_more_bg" />
+
+    </LinearLayout>
+</LinearLayout>

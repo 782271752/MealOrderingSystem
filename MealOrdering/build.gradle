@@ -1,0 +1,82 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.1'
+    defaultConfig {
+        minSdkVersion 8
+        targetSdkVersion 19
+        versionCode 6
+        versionName '20140805'
+    }
+//    signingConfigs {
+//        release {
+//            keyAlias 'Kinptm'
+//            keyPassword '123456'
+//            storeFile file('extraFiles/signing/signfile.jks')
+//            storePassword '123456'
+//        }
+//        baidu {
+//            keyAlias 'Kinptm'
+//            keyPassword '123456'
+//            storeFile file('extraFiles/signing/signfile.jks')
+//            storePassword '123456'
+//        }
+//    }
+    buildTypes {
+//        release {
+//            debuggable false
+//            jniDebugBuild false
+//            signingConfig signingConfigs.release
+//            runProguard true
+//            proguardFile 'extraFiles/proguard/proguard-android-optimize.txt'
+//            zipAlign true
+//        }
+//        baidu {
+//            debuggable false
+//            jniDebugBuild false
+//            signingConfig signingConfigs.baidu
+//            runProguard true
+//            proguardFile 'extraFiles/proguard/proguard-android-optimize.txt'
+//            zipAlign true
+//        }
+    }
+//    sourceSets {
+//        baidu.setRoot('extraFiles/buildTypes/baidu')
+//    }
+    lintOptions {
+        // if true, stop the gradle build if errors are found
+        abortOnError false
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'org/codehaus/jackson/impl/VERSION.txt'
+        exclude 'com/fasterxml/jackson/core/json/VERSION.txt'
+    }
+    productFlavors {
+    }
+}
+dependencies {
+    androidTestCompile 'com.jayway.android.robotium:robotium-solo:5.0.1'
+    compile fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    compile project(':Map')
+    compile project(':PushService')
+    compile files('libs/httpmime-4.1.3.jar')
+    compile files('libs/SocialSDK_QQZone_1.jar')
+    compile files('libs/SocialSDK_QQZone_2.jar')
+    compile files('libs/SocialSDK_tencentWB_1.jar')
+    compile files('libs/SocialSDK_tencentWB_2.jar')
+    compile files('libs/SocialSDK_WeiXin.jar')
+    compile files('libs/umeng_social_sdk.jar')
+    compile 'com.android.support:support-v4:19.0.1'
+    compile 'com.google.guava:guava:16.0.+'
+    compile 'com.octo.android.robospice:robospice-google-http-client:1.4.11'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.1'
+    compile 'com.jakewharton:butterknife:4.0.1'
+    compile 'com.navercorp.pulltorefresh:library:3.2.0@aar'
+    compile 'com.google.http-client:google-http-client-jackson:1.18.0-rc'
+    compile 'com.j256.ormlite:ormlite-android:4.48'
+    compile 'com.google.code.gson:gson:2.2.+'
+    compile 'com.android.support:appcompat-v7:19.+'
+}

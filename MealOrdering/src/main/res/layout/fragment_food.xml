@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mealordering.ui.fragment.FoodFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/food_types_lv"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:dividerHeight="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_default"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:scrollbars="none" />
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            ptr:ptrListViewExtrasEnabled="false"
+            android:id="@+id/food_foods_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:layout_margin="@dimen/margin_default"
+            android:dividerHeight="@dimen/padding_default"
+            android:divider="@android:color/transparent" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loading_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="center" />
+</FrameLayout>

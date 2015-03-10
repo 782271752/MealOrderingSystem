@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white"
+    android:weightSum="5"
+    android:padding="@dimen/padding_default">
+
+    <ImageView
+        android:id="@+id/my_preferential_icon_iv"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_large"
+        android:scaleType="fitCenter"
+        android:layout_weight="2"
+        android:src="@drawable/test_food" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            style="@style/LargeTextView"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:text="X" />
+
+        <TextView
+            style="@style/LargeTextView"
+            android:id="@+id/my_preferential_amount_tv"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:text="2" />
+    </LinearLayout>
+
+
+</LinearLayout>

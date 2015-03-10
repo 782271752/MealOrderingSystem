@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MergeRootFrame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_default">
+
+        <TextView
+            style="@style/DefaultTextView"
+            android:id="@+id/food_diy_detail_type_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/padding_small"
+            android:text="肉类" />
+
+        <TextView
+            style="@style/SmallTextView"
+            android:id="@+id/food_diy_detail_type_name_tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:layout_gravity="bottom"
+            android:padding="@dimen/padding_small"
+            android:text="@string/food_diy_detail_type_name_tip" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/food_diy_detail_type_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

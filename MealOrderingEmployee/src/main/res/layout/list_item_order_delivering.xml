@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_default"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/order_username_phone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_default"
+            android:text="黄先生(13828492210)" />
+
+        <TextView
+            android:id="@+id/order_address_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:text="海珠区新港西路高富帅小区201" />
+
+        <TextView
+            android:id="@+id/order_foods_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:text="美味披萨*2 , 烤鸡翅*3 "
+            android:layout_marginTop="@dimen/margin_default" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_large">
+
+            <Button
+                android:id="@+id/order_delivery_map_btn"
+                android:text="地图导航"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_default"
+                android:background="@drawable/bg_blue_btn"
+                android:textColor="@color/white"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large"
+                android:textSize="@dimen/text_size_small" />
+
+            <Button
+                android:id="@+id/order_delivery_finish_btn"
+                android:text="确认送达"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_default"
+                android:background="@drawable/bg_blue_btn"
+                android:textColor="@color/white"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginLeft="@dimen/margin_large" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/order_amount_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="¥ 100"
+        android:padding="@dimen/padding_default"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:background="#ffeb7070"
+        android:gravity="center" />
+</LinearLayout>

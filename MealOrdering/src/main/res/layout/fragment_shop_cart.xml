@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mealordering.ui.fragment.ShopCartFragment"
+    android:paddingTop="@dimen/padding_default"
+    android:paddingLeft="@dimen/padding_default"
+    android:paddingRight="@dimen/padding_default">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/bg_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_default">
+
+            <TextView
+                style="@style/DefaultTextView"
+                android:text="合计 : "
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/DefaultTextView"
+                android:id="@+id/shop_cart_total_amount_tv"
+                android:text="1份"
+                android:textStyle="bold"
+                android:layout_weight="1" />
+
+            <TextView
+                style="@style/DefaultTextView"
+                android:textStyle="bold"
+                android:text="共计 : " />
+
+            <TextView
+                style="@style/DefaultTextView"
+                android:id="@+id/shop_cart_total_cast_tv"
+                android:textColor="@color/red"
+                android:text=" ¥ 10"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <include
+            layout="@layout/layout_divider"
+            android:layout_height="@dimen/divider_height" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ListView
+                android:id="@+id/shop_cart_list_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/padding_small"
+                android:paddingLeft="@dimen/padding_small"
+                android:cacheColorHint="@android:color/transparent"
+                android:choiceMode="singleChoice" />
+
+            <include layout="@layout/layout_loading" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/shop_cart_settlement_btn"
+        style="@style/DefaultButton"
+        android:text="@string/settlement" />
+</LinearLayout>

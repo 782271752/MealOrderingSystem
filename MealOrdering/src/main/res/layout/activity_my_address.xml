@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mealordering.ui.MyAddressActivity"
+    tools:ignore="MergeRootFrame"
+    android:padding="@dimen/padding_default">
+
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="默认送餐地址" />-->
+
+    <!--<com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"-->
+    <!--ptr:ptrListViewExtrasEnabled="false"-->
+    <!--android:id="@+id/list_lv"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:minHeight="200dp"-->
+    <!--android:layout_marginTop="@dimen/margin_default"-->
+    <!--android:background="@drawable/bg_white"-->
+    <!--android:padding="@dimen/padding_small"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1" />-->
+    <FrameLayout
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:minHeight="200dp">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            ptr:ptrListViewExtrasEnabled="false"
+            android:id="@+id/list_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_white"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:layout_margin="@dimen/margin_default"
+            android:dividerHeight="@dimen/divider_height"
+            android:divider="#f1f1f1"
+            android:choiceMode="singleChoice"
+            android:fadingEdge="none" />
+
+        <ProgressBar
+            android:id="@+id/loading_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/my_address_add_btn"
+        style="@style/DefaultButton"
+        android:layout_marginTop="@dimen/margin_default"
+        android:text="@string/add_address" />
+</LinearLayout>

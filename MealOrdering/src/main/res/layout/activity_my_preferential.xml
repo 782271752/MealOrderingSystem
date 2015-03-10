@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mealordering.ui.MyPreferentialActivity"
+    tools:ignore="MergeRootFrame">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <CheckedTextView
+            android:id="@+id/my_preferential_unused_ctv"
+            style="@style/CheckedTextView"
+            android:textColor="@color/red"
+            android:text="未使用" />
+
+        <View
+            android:layout_width="@dimen/divider_height"
+            android:layout_height="match_parent"
+            android:background="@color/light_grey"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small" />
+
+        <CheckedTextView
+            android:id="@+id/my_preferential_used_ctv"
+            style="@style/CheckedTextView"
+            android:text="已使用" />
+
+        <View
+            android:layout_width="@dimen/divider_height"
+            android:layout_height="match_parent"
+            android:background="@color/light_grey"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small" />
+
+        <CheckedTextView
+            android:id="@+id/my_preferential_overdue_ctv"
+            style="@style/CheckedTextView"
+            android:text="已过期" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_refresh_list_view" />
+</LinearLayout>

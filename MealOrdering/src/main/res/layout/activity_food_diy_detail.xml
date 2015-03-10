@@ -1,0 +1,117 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mealordering.ui.FoodDetailActivity"
+    tools:ignore="MergeRootFrame">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/food_detail_image_iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="200dp"
+                android:src="@drawable/test_diy"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_default">
+
+
+                <TextView
+                    style="@style/MediumTextView"
+                    android:id="@+id/food_diy_detail_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/padding_small"
+                    android:text="面包DIY" />
+
+
+                <include layout="@layout/layout_divider" />
+
+                <LinearLayout
+                    android:id="@+id/food_diy_detail_type_root_layout"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_default">
+
+                    <TextView
+                        style="@style/DefaultTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="数量 : " />
+
+                    <LinearLayout
+                        android:id="@+id/food_foods_control_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/margin_default">
+
+                        <ImageButton
+                            android:id="@+id/order_food_plus_btn"
+                            android:layout_width="@dimen/btn_plus_reduce"
+                            android:layout_height="@dimen/btn_plus_reduce"
+                            android:src="@drawable/btn_order_plus"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent" />
+
+                        <TextView
+                            style="@style/DefaultTextView"
+                            android:id="@+id/order_food_amount_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:minWidth="@dimen/width_small"
+                            android:layout_marginLeft="@dimen/margin_default"
+                            android:layout_marginRight="@dimen/margin_default"
+                            android:background="@drawable/bg_order_text"
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/margin_small"
+                            android:layout_marginBottom="@dimen/margin_small"
+                            android:text="1" />
+
+                        <ImageButton
+                            android:id="@+id/order_food_reduce_btn"
+                            android:layout_width="@dimen/btn_plus_reduce"
+                            android:layout_height="@dimen/btn_plus_reduce"
+                            android:src="@drawable/btn_order_reduce"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/food_detail_buy_btn"
+                    style="@style/DefaultButton"
+                    android:text="加入购物车" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/layout_loading" />
+    </FrameLayout>
+</ScrollView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">肯爸宅急送送餐端</string>
+    <string name="title_activity_login">肯爸宅急送送餐端</string>
+    <string name="title_activity_order_detail">订单详情</string>
+    <string name="title_activity_get_order">领取订单</string>
+    <string name="title_activity_order_delivering">派送</string>
+    <string name="money"> ¥ <xliff:g id="cost">%1$s</xliff:g></string>
+    <string name="title_activity_map">地图</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="error_network">搜索失败,请检查网络连接！</string>
+    <string name="error_key">key验证无效！</string>
+    <string name="error_other">未知错误，请稍后重试!错误码为</string>
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+</resources>

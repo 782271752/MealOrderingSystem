@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mealordering.ui.OrderConfirmActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="@color/content_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/layout_sub_title" />
+
+        <Button
+            android:id="@+id/order_confirm_add_address_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_default"
+            android:layout_gravity="right|center_vertical"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_title_bg"
+            android:text="@string/add_address" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_default">
+
+            <TextView
+                style="@style/DefaultTextView"
+                android:text="送餐信息"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_default">
+
+                <TextView
+                    style="@style/SmallTextView"
+                    android:text="收货人 : " />
+
+                <TextView
+                    style="@style/SmallTextView"
+                    android:id="@+id/order_confirm_name_tv"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_default">
+
+                <TextView
+                    style="@style/SmallTextView"
+                    android:text="电话 : " />
+
+                <TextView
+                    android:id="@+id/order_confirm_phone_tv"
+                    style="@style/SmallTextView"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_default">
+
+                <TextView
+                    style="@style/SmallTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="送餐地址 : " />
+
+                <Spinner
+                    android:id="@+id/order_confirm_address_sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_default"
+                    android:entries="@array/streets"
+                    android:background="@drawable/bg_spinner_view" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/margin_default"
+                android:orientation="vertical"
+                android:background="@drawable/bg_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_default"
+                    android:background="#ffe9e2d0">
+
+                    <TextView
+                        style="@style/DefaultTextView"
+                        android:layout_width="wrap_content"
+                        android:text="合计 : "
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/DefaultTextView"
+                        android:id="@+id/order_confirm_total_amount_tv"
+                        android:text="1份"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/DefaultTextView"
+                        android:textStyle="bold"
+                        android:text="总价 : " />
+
+                    <TextView
+                        style="@style/DefaultTextView"
+                        android:id="@+id/order_confirm_total_cast_tv"
+                        android:textColor="@color/red"
+                        android:text=" ¥ 10"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/list_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:padding="@dimen/padding_small"
+                    android:layout_weight="1"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:choiceMode="singleChoice" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:text="确认提交"
+                style="@style/DefaultButton" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_loading" />
+    </FrameLayout>
+</LinearLayout>
+

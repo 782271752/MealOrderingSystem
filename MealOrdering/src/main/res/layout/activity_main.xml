@@ -1,0 +1,9 @@
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome_iv"
+    android:scaleType="centerInside"
+    android:layout_width="match_parent"
+    android:src="@drawable/ic_launcher"
+    android:layout_height="match_parent"
+    tools:context="com.mealordering.ui.MainActivity"
+    tools:ignore="MergeRootFrame" />

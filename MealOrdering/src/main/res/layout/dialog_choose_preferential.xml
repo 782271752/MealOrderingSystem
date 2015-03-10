@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/padding_large"
+    android:paddingBottom="@dimen/padding_large"
+    android:paddingLeft="@dimen/padding_default"
+    android:paddingRight="@dimen/padding_default">
+
+    <TextView
+        android:text="选择优惠卷"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_default"
+        android:background="#ff9c2623"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <FrameLayout
+        android:background="#fff2ebe1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_small">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="现金优惠券"-->
+            <!--android:background="@drawable/bg_choose_preferential_text"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:paddingRight="@dimen/height_default"-->
+            <!--android:layout_marginTop="@dimen/margin_default" />-->
+
+            <RadioGroup
+                android:id="@+id/order_preferential_cash_1_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_small"
+                android:weightSum="4">
+
+                <RadioButton
+                    android:id="@+id/order_preferential_5_rb"
+                    style="@style/ChoosePreferentialRadioButton"
+                    android:background="@drawable/rb_cash_5"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/order_preferential_10_rb"
+                    style="@style/ChoosePreferentialRadioButton"
+                    android:background="@drawable/rb_cash_10" />
+
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/order_preferential_cash_2_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_small"
+                android:weightSum="4">
+
+
+                <RadioButton
+                    android:id="@+id/order_preferential_20_rb"
+                    style="@style/ChoosePreferentialRadioButton"
+                    android:background="@drawable/rb_cash_20" />
+
+                <RadioButton
+                    android:id="@+id/order_preferential_50_rb"
+                    style="@style/ChoosePreferentialRadioButton"
+                    android:background="@drawable/rb_cash_50" />
+            </RadioGroup>
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="实物优惠券"-->
+            <!--android:background="@drawable/bg_choose_preferential_text"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:paddingRight="@dimen/height_default"-->
+            <!--android:layout_marginTop="@dimen/margin_default" />-->
+
+            <RadioGroup
+                android:id="@+id/order_preferential_gift_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_small"
+                android:weightSum="7">
+
+                <RadioButton
+                    android:id="@+id/order_preferential_gift_1_rb"
+                    style="@style/ChoosePreferentialRadioButton"
+                    android:background="@drawable/test_kele" />
+
+                <RadioButton
+                    android:id="@+id/order_preferential_gift_2_rb"
+                    style="@style/ChoosePreferentialRadioButton"
+                    android:visibility="invisible"
+                    android:background="@drawable/test_kele" />
+            </RadioGroup>
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="送餐费 : 5 元"-->
+            <!--android:textSize="@dimen/text_size_large"-->
+            <!--android:layout_marginTop="@dimen/margin_default"-->
+            <!--android:textColor="@color/red" />-->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|bottom"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/height_default"
+                android:layout_marginRight="@dimen/height_default"
+                android:paddingBottom="@dimen/padding_default">
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ok"
+                    android:paddingLeft="@dimen/padding_large"
+                    android:paddingRight="@dimen/padding_large"
+                    android:background="@drawable/btn_order_type"
+                    android:textColor="@color/red" />
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_large"
+                    android:paddingRight="@dimen/padding_large"
+                    android:text="@string/cancel"
+                    android:background="@drawable/btn_order_type"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

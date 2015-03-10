@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mealordering.ui.RegisterActivity"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white"
+        android:layout_margin="@dimen/margin_large"
+        android:paddingLeft="@dimen/padding_default"
+        android:paddingRight="@dimen/padding_default">
+
+        <TableRow>
+
+            <TextView
+                style="@style/RegisterTextView"
+                android:layout_gravity="center_vertical"
+                android:text="　手　机 : " />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/register_phone_et"
+                    style="@style/RegisterEditText"
+                    android:hint="@string/input_phone"
+                    android:inputType="phone" />
+
+                <Button
+                    android:id="@+id/register_send_code_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_code_bg"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/padding_default"
+                    android:text="@string/send_code"
+                    android:layout_gravity="right|center_vertical" />
+            </LinearLayout>
+        </TableRow>
+
+        <include
+            layout="@layout/layout_divider"
+            android:layout_height="@dimen/divider_height" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/RegisterTextView"
+                android:text="　验证码 : " />
+
+            <EditText
+                android:id="@+id/register_code_et"
+                style="@style/RegisterEditText"
+                android:hint="@string/input_code"
+                android:inputType="number" />
+        </TableRow>
+
+        <include
+            layout="@layout/layout_divider"
+            android:layout_height="@dimen/divider_height" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/RegisterTextView"
+                android:text="　密　码 : " />
+
+            <EditText
+                android:id="@+id/register_pwd_et"
+                style="@style/RegisterEditText"
+                android:hint="@string/input_pwd"
+                android:inputType="textPassword" />
+        </TableRow>
+
+        <include
+            layout="@layout/layout_divider"
+            android:layout_height="@dimen/divider_height" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/RegisterTextView"
+                android:text="确认密码 : " />
+
+            <EditText
+                android:id="@+id/register_pwd_confirm_et"
+                style="@style/RegisterEditText"
+                android:hint="@string/input_pwd_confirm"
+                android:inputType="textPassword" />
+        </TableRow>
+
+        <include
+            layout="@layout/layout_divider"
+            android:layout_height="@dimen/divider_height" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <CheckBox
+                android:id="@+id/register_agree_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin_default"
+                android:padding="5dp"
+                android:button="@drawable/bg_register_checked_view"
+                android:checked="false" />
+            <TextView
+                android:id="@+id/register_agree_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="我已认真阅读并同意用户协议"
+                android:textSize="15sp"
+                android:textColor="@color/light_grey"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+    </TableLayout>
+
+    <Button
+        style="@style/DefaultButton"
+        android:text="@string/register"
+        android:id="@+id/register_btn"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

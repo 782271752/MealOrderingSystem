@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#ffc73025</color>
+    <color name="light_grey">#ff979790</color>
+    <color name="content_bg">#fffcfac0</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="title_text">#fff1da33</color>
+    <color name="order_id_bg">#ffe9e2d0</color>
+
+    <color name="choose_preferential_text">#750000</color>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_default">
+
+    <TextView
+        android:id="@+id/my_address_title_tv"
+        style="@style/DefaultTextView"
+        android:textSize="14sp"
+        android:drawableLeft="@drawable/icon_my_address_default"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/padding_default"
+        android:text="某某路某某大厦" />
+
+
+</LinearLayout>

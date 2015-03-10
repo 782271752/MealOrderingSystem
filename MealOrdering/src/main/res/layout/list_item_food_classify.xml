@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/food_classify_name_tv"
+    style="@style/MediumTextView"
+    android:text="分类"
+    android:padding="@dimen/padding_default"
+    android:gravity="center"
+    android:background="@drawable/food_classify_bg" />

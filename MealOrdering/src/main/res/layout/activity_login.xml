@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mealordering.ui.LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/content_bg"
+    tools:ignore="MergeRootFrame">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/layout_sub_title" />
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_default"
+            android:layout_gravity="right|center_vertical"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_title_bg"
+            android:text="@string/register" />
+    </FrameLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white"
+        android:layout_margin="@dimen/margin_large"
+        android:paddingLeft="@dimen/padding_default"
+        android:paddingRight="@dimen/padding_default">
+
+        <TableRow>
+
+            <TextView
+                style="@style/RegisterTextView"
+                android:text="手机号 : " />
+
+            <EditText
+                android:id="@+id/login_phone_et"
+                style="@style/RegisterEditText"
+                android:hint="@string/input_phone"
+                android:inputType="phone" />
+        </TableRow>
+
+        <include
+            layout="@layout/layout_divider"
+            android:layout_height="@dimen/divider_height" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/RegisterTextView"
+                android:text="密　码 : " />
+
+            <EditText
+                android:id="@+id/login_pwd_et"
+                style="@style/RegisterEditText"
+                android:hint="@string/input_pwd"
+                android:inputType="textPassword" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/login_find_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="忘记密码？"
+        android:textSize="16sp"
+        style="@style/RegisterTextView"
+        android:gravity="right"
+        android:layout_marginRight="16dp"/>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:text="@string/login"
+        style="@style/DefaultButton" />
+</LinearLayout>

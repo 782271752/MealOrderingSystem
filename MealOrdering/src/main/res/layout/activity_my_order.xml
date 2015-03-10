@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mealordering.ui.MyOrderActivity"
+    tools:ignore="MergeRootFrame">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <CheckedTextView
+            android:id="@+id/my_order_state_going_ctv"
+            style="@style/CheckedTextView"
+            android:checked="true"
+            android:textColor="@color/red"
+            android:text="进行中" />
+
+        <CheckedTextView
+            android:id="@+id/my_order_state_finished_ctv"
+            style="@style/CheckedTextView"
+            android:text="已完成" />
+
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_refresh_list_view" />
+</LinearLayout>

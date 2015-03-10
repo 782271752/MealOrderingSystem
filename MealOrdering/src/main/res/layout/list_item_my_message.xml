@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white"
+    android:padding="@dimen/padding_default">
+
+    <TextView
+        style="@style/MediumTextView"
+        android:id="@+id/my_message_time_tv"
+        android:textColor="@color/light_grey"
+        android:text="2014-02-17 00:00:00" />
+
+    <include layout="@layout/layout_divider" />
+
+    <TextView
+        android:id="@+id/my_message_content_tv"
+        style="@style/DefaultTextView"
+        android:text="您评价的订单 002011 已经生效,非常感谢您的宝贵建议,我们会处理!\n您评价的订单 002011 已经生效,非常感谢您的宝贵建议,我们会处理!" />
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fff2ebe1">
+
+    <TextView
+        android:text="订单选项"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_default"
+        android:background="#ff9c2623"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <RadioGroup
+        android:id="@+id/order_type_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_large">
+
+        <RadioButton
+            style="@style/MediumTextView"
+            android:id="@+id/order_type_outside_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:color/transparent"
+            android:drawablePadding="@dimen/margin_default"
+            android:button="@drawable/icon_radio_checked_item"
+            android:layout_margin="@dimen/margin_default"
+            android:checked="true"
+            android:text="外送(送餐费3元)" />
+
+        <RadioButton
+            style="@style/MediumTextView"
+            android:id="@+id/order_type_inside_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:color/transparent"
+            android:drawablePadding="@dimen/margin_default"
+            android:button="@drawable/icon_radio_checked_item"
+            android:layout_margin="@dimen/margin_default"
+            android:text="到店下单" />
+
+        <RadioButton
+            style="@style/MediumTextView"
+            android:id="@+id/order_type_subscribe_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:color/transparent"
+            android:drawablePadding="@dimen/margin_default"
+            android:button="@drawable/icon_radio_checked_item"
+            android:layout_margin="@dimen/margin_default"
+            android:text="预约下单(送餐费3元)" />
+
+        <Button
+            android:id="@+id/order_type_select_time_btn"
+            android:background="@drawable/btn_order_type"
+            android:text="选择预约时间"
+            android:paddingLeft="@dimen/padding_large"
+            android:paddingRight="@dimen/padding_large"
+            android:paddingTop="@dimen/padding_default"
+            android:paddingBottom="@dimen/padding_default"
+            android:visibility="gone"
+            android:textColor="@color/red"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/width_default"
+        android:layout_marginRight="@dimen/width_default"
+        android:paddingBottom="@dimen/padding_default">
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:paddingLeft="@dimen/padding_large"
+            android:paddingRight="@dimen/padding_large"
+            android:paddingTop="@dimen/padding_default"
+            android:paddingBottom="@dimen/padding_default"
+            android:background="@drawable/btn_order_type"
+            android:textColor="@color/red" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/width_small"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_large"
+            android:paddingRight="@dimen/padding_large"
+            android:paddingTop="@dimen/padding_default"
+            android:paddingBottom="@dimen/padding_default"
+            android:text="@string/cancel"
+            android:background="@drawable/btn_order_type"
+            android:textColor="@color/red" />
+    </LinearLayout>
+</LinearLayout>

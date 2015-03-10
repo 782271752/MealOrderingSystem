@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/bg_white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:minHeight="96dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/food_foods_image_iv"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/food_foods_control_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_gravity="right">
+
+                <ImageButton
+                    android:id="@+id/order_food_plus_btn"
+                    android:layout_width="@dimen/btn_plus_reduce"
+                    android:layout_height="@dimen/btn_plus_reduce"
+                    android:src="@drawable/btn_order_plus"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent" />
+
+                <TextView
+                    android:id="@+id/order_food_amount_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="24dp"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:layout_marginRight="@dimen/margin_default"
+                    android:background="@drawable/bg_order_text"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:text="1" />
+
+                <ImageButton
+                    android:id="@+id/order_food_reduce_btn"
+                    android:layout_width="@dimen/btn_plus_reduce"
+                    android:layout_height="@dimen/btn_plus_reduce"
+                    android:src="@drawable/btn_order_reduce"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_gravity="bottom"
+                android:background="@drawable/food_title_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_default"
+                android:paddingRight="@dimen/padding_default"
+                android:paddingTop="@dimen/padding_small"
+                android:paddingBottom="@dimen/padding_small">
+
+                <TextView
+                    android:id="@+id/food_foods_name_tv"
+                    style="@style/MediumTextView"
+                    android:drawableRight="@drawable/icon_good"
+                    android:drawablePadding="@dimen/padding_default"
+                    android:textColor="@color/white"
+                    android:text="New Text" />
+
+                <TextView
+                    android:id="@+id/food_foods_like_tv"
+                    style="@style/MediumTextView"
+                    android:text="New Text"
+                    android:drawableLeft="@drawable/icon_heart"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/padding_default"
+                    android:layout_gravity="right"
+                    android:textColor="@color/white" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_default"
+        android:paddingRight="@dimen/padding_default"
+        android:paddingTop="@dimen/padding_small"
+        android:paddingBottom="@dimen/padding_small">
+
+        <TextView
+            android:id="@+id/food_foods_price_tv"
+            style="@style/MediumTextView"
+            android:textColor="#c60101"
+            android:textStyle="bold"
+            android:text="New Text"
+
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            android:id="@+id/food_foods_order_btn"
+            style="@style/MediumTextView"
+            android:focusable="false"
+            android:text="订购"
+            android:background="@drawable/bg_bug"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:layout_gravity="right" />
+    </FrameLayout>
+
+</LinearLayout>

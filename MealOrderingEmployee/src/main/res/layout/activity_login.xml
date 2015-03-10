@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_default"
+    tools:context="com.mealordering.employee.ui.LoginActivity"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:gravity="center">
+
+    <ImageView
+        android:src="@drawable/ic_login_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:scaleType="center"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/height_default"
+        android:paddingRight="@dimen/height_default"
+        android:layout_marginTop="@dimen/margin_large">
+
+        <EditText
+            android:id="@+id/login_username_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input_text"
+            android:hint="员工帐号" />
+
+        <EditText
+            android:id="@+id/login_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input_text"
+            android:inputType="textPassword"
+            android:layout_marginTop="@dimen/margin_default"
+            android:hint="登录密码" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_login"
+            android:text="登　录" />
+
+    </LinearLayout>
+</LinearLayout>
